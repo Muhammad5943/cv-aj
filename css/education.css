@@ -1,0 +1,57 @@
+/* ========================================
+   Education Section Styles
+   ======================================== */
+
+.education-section {
+    background: var(--light-bg);
+}
+
+.edu-card {
+    background: white;
+    padding: 32px;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+    height: 100%;
+}
+
+.edu-card:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    border-color: transparent;
+    transform: translateY(-5px);
+}
+
+.edu-header {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+.edu-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 4px;
+}
+
+.edu-school {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.edu-date {
+    display: inline-flex;
+    align-items: center;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    background: var(--light-bg);
+    padding: 6px 14px;
+    border-radius: 50px;
+    margin-bottom: 12px;
+}
+
+.edu-detail {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}

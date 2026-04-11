@@ -1,0 +1,93 @@
+/* ========================================
+   Projects Section Styles
+   ======================================== */
+
+.projects-section {
+    background: white;
+}
+
+.project-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    border-color: transparent;
+    transform: translateY(-5px);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 4px;
+}
+
+.project-subtitle {
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.project-link {
+    width: 50px;
+    height: 50px;
+    background: var(--light-bg);
+    color: var(--primary-color);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.project-link:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: rotate(45deg);
+}
+
+.project-desc {
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.project-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.project-btn:hover {
+    gap: 12px;
+    color: var(--primary-dark);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .project-card {
+        padding: 28px;
+    }
+    
+    .project-title {
+        font-size: 1.25rem;
+    }
+}

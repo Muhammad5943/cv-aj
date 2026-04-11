@@ -1,0 +1,24 @@
+/* ========================================
+   Muhammad Aji Putra - Portfolio Styles
+   Bootstrap 5 Custom Theme
+   Main CSS - Imports all modules
+   ======================================== */
+
+/* CSS Variables */
+@import 'variables.css';
+
+/* Global Styles */
+@import 'base.css';
+
+/* Components */
+@import 'loader.css';
+@import 'nav.css';
+@import 'hero.css';
+@import 'about.css';
+@import 'experience.css';
+@import 'skills.css';
+@import 'certifications.css';
+@import 'education.css';
+@import 'projects.css';
+@import 'contact.css';
+@import 'footer.css';
