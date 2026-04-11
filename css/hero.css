@@ -136,6 +136,41 @@
     border-color: var(--primary-color);
 }
 
+/* Sparkle Particles */
+.sparkle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #60a5fa;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px rgba(96, 165, 250, 0.8),
+                0 0 20px 4px rgba(96, 165, 250, 0.4),
+                0 0 30px 6px rgba(96, 165, 250, 0.2);
+    animation: sparkle-animation 3s infinite ease-in-out;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.sparkle-1 { top: 20%; left: 10%; animation-delay: 0s; }
+.sparkle-2 { top: 30%; left: 85%; animation-delay: 0.5s; }
+.sparkle-3 { top: 60%; left: 15%; animation-delay: 1s; }
+.sparkle-4 { top: 70%; left: 80%; animation-delay: 1.5s; }
+.sparkle-5 { top: 40%; left: 25%; animation-delay: 2s; }
+.sparkle-6 { top: 15%; left: 70%; animation-delay: 2.5s; }
+.sparkle-7 { top: 80%; left: 40%; animation-delay: 0.8s; }
+.sparkle-8 { top: 50%; left: 90%; animation-delay: 1.8s; }
+
+@keyframes sparkle-animation {
+    0%, 100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+
 /* Responsive Hero */
 @media (max-width: 768px) {
     .hero-title {
